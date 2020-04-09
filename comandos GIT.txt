@@ -1,0 +1,78 @@
+COMANDOS DE GIT
+
+git
+MUESTRA QUE VERSION ES
+
+git init
+se crea un repositorio vacio en git osea una nueva carpera pero oculto donde se va guardar todo las versiones y  cambios
+
+git status
+permite ver el estado actual del repositorio git
+
+el steling inyells es donde se almacena antes de guradar en el repositorio
+
+git add index.html o git add .(agrega todos los archivos)
+se agrega el archivo index.html a en el unstage y está de color ROJO
+
+git commit -m "Agregando index.html"
+se está guardando al directorio el archivo index.html y estará de color VERDE, el texto debe de ser especifico
+
+git rm --cached index.html
+se está eliminando la modificacion del unstage
+
+crear: .gitinore en sublime y guardar en el repositorio git y diitar:
+*.psd
+contacto.html
+y de esa manera se está excluyendo archivos que no queremos modificar.
+
+git log
+permite mostrar y trer todos los cambios que han echo mostrando fecha,hora,correo y quien lo hizo
+
+cls para limpiar y q para salir
+
+git log --stat
+queremos ver cual es las caracteristicas del commit cuantas inserciones o borrar se hicieron.
+
+git log --oneline
+te muestra todo el historial de todos los commit en una sola linea 
+
+git log --graph
+te va mostrar una grafica y es para mostrar las ramas
+
+git log --oneline --graph --all
+para mostrar el historial de los commit que se a hecho.
+
+git diff
+para comprobar diferencias
+
+git diff HEAD
+está comparando pero solo del head
+
+git diff dfca548 index.heml
+está conparando las diferencia que se hicieron entre el commit dfca548 y index.html
+
+git checkout fcea658
+para regresar al commit anterior o cualesquiera y automaticamente se efecuta los cambios en sublime. o codigo
+y borrar los que antecede
+
+---------------------------------------------------------------
+
+git branch
+permite conocer todas las ramas que tenemos incluido la rama primcipal master.
+
+git checkout master 
+permite cambiar la posicion a master
+
+git checkout -b experimento
+permite crear una nueva rama llamada experimento
+y se está duplicando el proyecto
+
+
+
+
+
+
+
+
+
+
